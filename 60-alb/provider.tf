@@ -8,7 +8,7 @@ terraform {
   
   backend "s3" {
     bucket = "aws-raidi-state"
-    key    = "expense-eks"
+    key    = "expense-alb-ingress"
     region = "us-east-1"
     dynamodb_table = "aws-locking"
   }
@@ -18,4 +18,3 @@ provider "aws" {
   # Configuration options
   region = "us-east-1"
 }
-
