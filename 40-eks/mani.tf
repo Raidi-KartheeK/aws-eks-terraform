@@ -11,7 +11,7 @@ module "eks" {
 
 
   cluster_name    = "${var.project_name}-${var.enivronment}"
-  cluster_version = "1.31"
+  cluster_version = "1.30"
 
   cluster_endpoint_public_access  = true
 
