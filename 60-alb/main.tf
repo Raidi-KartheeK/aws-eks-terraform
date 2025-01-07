@@ -10,7 +10,7 @@ module "ingress_alb" {
   enable_deletion_protection = false
   tags = merge(
     var.common_tags,
-    var.web_alb_tags
+    var.ingress_alb_tags
   )
 }
 
@@ -52,7 +52,7 @@ resource "aws_lb_listener" "https" {
 module "records" {
   source  = "terraform-aws-modules/route53/aws//modules/records"
 
-  zone_name = var.zone_name #daws81s.online
+  zone_name = var.zone_name #aws-dev-rk.online
   records = [
     {
       name    = "expense-${var.enivronment}" # *.app-dev
