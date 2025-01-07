@@ -13,7 +13,7 @@ variable "common_tags"{
     }
 }
 
-variable "web_alb_tags"{
+variable "ingress_alb_tags"{
     default = {
        component =  "web_alb"
     }
