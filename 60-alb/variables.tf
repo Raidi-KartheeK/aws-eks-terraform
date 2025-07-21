@@ -20,7 +20,7 @@ variable "ingress_alb_tags"{
 }
 
 variable "zone_name" {
-    default = "aws-dev-rk.online" 
+    default = "karthikraidi.online" 
     
     
 }
